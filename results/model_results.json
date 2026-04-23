@@ -1,0 +1,48 @@
+{
+  "project": "Kenya Smallholder Maize Yield Prediction",
+  "author": "Clement Ongera Nyangoya",
+  "date": "2026-04-23",
+  "data": {
+    "plot_seasons": 3,
+    "plots": 1,
+    "seasons": 3,
+    "date_range": {
+      "start": "2023-03-15",
+      "end": "2024-08-05"
+    }
+  },
+  "features": {
+    "used": [
+      "rain_preseason_mm",
+      "rain_growing_mm",
+      "rain_flowering_mm",
+      "rain_peak_day_mm",
+      "dry_days_count",
+      "heavy_rain_days",
+      "rainfall_cv",
+      "days_to_first_rain",
+      "growing_days"
+    ],
+    "most_important": "rain_growing_mm"
+  },
+  "model": {
+    "type": "RandomForestRegressor",
+    "n_estimators": 100,
+    "max_depth": 3
+  },
+  "performance": {
+    "training": {
+      "rmse": 296.21219871346733,
+      "mae": 271.6666666666667,
+      "r2": 0.7743785714285715
+    },
+    "test": "N/A (insufficient data for split)"
+  },
+  "limitations": [
+    "Small sample size (pilot study)",
+    "Farmer-reported yield estimates (not formally weighed)",
+    "CHIRPS rainfall estimates (5.5km resolution, not ground measurements)",
+    "Single plot or limited spatial coverage",
+    "No soil nutrient, pest, or management data"
+  ]
+}

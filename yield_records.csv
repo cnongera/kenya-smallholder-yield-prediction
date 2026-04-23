@@ -1,0 +1,4 @@
+plot_id,plot_name,latitude,longitude,area_m2,season,planting_date,harvest_date,yield_kg,yield_method,notes
+P001,Main plot,-0.3066,35.9668,1800,2023_LR,2023-03-15,2023-07-28,540,bag_count,Good rains no major pests
+P001,Main plot,-0.3066,35.9668,1800,2023_SR,2023-10-20,2024-01-30,360,bag_count,Dry spell in November
+P001,Main plot,-0.3066,35.9668,1800,2024_LR,2024-03-18,2024-08-05,630,bag_count,Best season timely fertilizer
