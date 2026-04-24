@@ -37,5 +37,3 @@ growing seasons (2023–2024).
 - Single plot — no spatial generalization
 - CHIRPS resolution (5.5 km) much coarser than plot size
 - Training-on-all evaluation — no independent test set
-
-## Repository Structure
